@@ -1,0 +1,11 @@
+CURL
+curl https://uselessfacts.jsph.pl/random.json | python -m json.tool
+
+
+
+
+
+WEBEX
+https://developer.webex.com/docs/getting-started (token generated from)
+export TOKEN="ZTE4MTI3ZmQtMGQ4MC00YmZlLTg2OWMtNzgyNTBmNDBmOTgyYmQyZDQ4MzMtNWQ5_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f"
+curl https://webexapis.com/v1/messages -X POST -H  "Authorization:Bearer $TOKEN" -H "Content-Type: application/json"  --data '{"toPersonEmail":"hchallam@cisco.com", "text":"api generated : Hi from Cisco"}' | python -m json.tool
